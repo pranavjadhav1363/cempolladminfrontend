@@ -165,14 +165,14 @@ export default function ProductsPage()
                                             : product.ProductDescription}
                                     </td>
                                     <td className="px-4 py-3">
-                                        <a
+                                        <Link
                                             href={product?.ProductTDS}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="text-blue-600 hover:underline"
                                         >
                                             View TDS
-                                        </a>
+                                        </Link>
                                     </td>
 
                                     <td className="px-4 py-3 flex gap-2">

@@ -1,6 +1,7 @@
 "use client";
 import { useCookies } from "next-client-cookies";
 import { CldUploadButton } from "next-cloudinary";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 
@@ -153,14 +154,14 @@ export default function AddProductPage()
 
                         {form.ProductTDS && (
                             <div className="mt-2 flex items-center gap-2">
-                                <a
+                                <Link
                                     href={form.ProductTDS}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-blue-600 hover:underline"
                                 >
                                     View TDS
-                                </a>
+                                </Link>
                                 <button
                                     type="button"
                                     onClick={() =>
@@ -203,7 +204,7 @@ export default function AddProductPage()
                         <div className="mt-3 flex gap-3 flex-wrap">
                             {form?.ProductImage?.map((url, idx) => (
                                 <div key={idx} className="relative group">
-                                    <a
+                                    <Link
                                         href={url}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -214,7 +215,7 @@ export default function AddProductPage()
                                             alt={`Product ${idx + 1}`}
                                             className="h-24 w-24 object-cover rounded border shadow"
                                         />
-                                    </a>
+                                    </Link>
 
                                     {/* ❌ Remove Button */}
                                     <button

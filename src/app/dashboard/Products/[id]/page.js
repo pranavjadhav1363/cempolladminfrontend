@@ -147,14 +147,14 @@ const ProductDetailPage = () =>
                         <div className="mb-4">
                             <span className="text-[#E81178] font-semibold">TDS:</span>
                             {product?.ProductTDS && (
-                                <a
+                                <Link
                                     href={product.ProductTDS}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="ml-2 text-[#00953A] font-bold underline hover:text-green-500"
                                 >
                                     View PDF
-                                </a>
+                                </Link>
                             )}
                         </div>
                         <div className="mb-4">
@@ -212,14 +212,14 @@ const ProductDetailPage = () =>
                         <div>
                             <label className="block text-[#E81178] font-semibold mb-1">TDS (PDF)</label>
                             {form?.ProductTDS && (
-                                <a
+                                <Link
                                     href={form.ProductTDS}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-[#00953A] underline hover:text-green-500 block mb-2"
                                 >
                                     View Current TDS
-                                </a>
+                                </Link>
                             )}
                             <CldUploadButton
                                 options={{ multiple: false, resource_type: "raw" }}

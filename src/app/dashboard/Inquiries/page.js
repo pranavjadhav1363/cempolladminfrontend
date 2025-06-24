@@ -1,5 +1,6 @@
 "use client";
 import { useCookies } from "next-client-cookies";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 export default function InquiriesPage()
@@ -146,12 +147,12 @@ const filteredInquiries = inquiries.filter((inq) => {
                                     Mark as {inq.isRead ? "Unread" : "Read"}
                                 </button>
 
-                                <a
+                                <Link
                                     href={`mailto:${inq.EmailId}?subject=Reply to your inquiry&body=Hi ${inq.Name},`}
                                     className="px-4 py-2 rounded font-semibold text-white bg-blue-600 hover:bg-blue-700 inline-block"
                                 >
                                     Reply
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     ))}
