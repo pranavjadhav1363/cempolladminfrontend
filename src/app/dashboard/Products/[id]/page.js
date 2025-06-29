@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import { useEffect } from "react";
 import { useCookies } from "next-client-cookies";
 import Image from "next/image";
+import Link from "next/link";
 
 
 
