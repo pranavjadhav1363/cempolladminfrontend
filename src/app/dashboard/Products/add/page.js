@@ -251,16 +251,16 @@ export default function AddProductPage()
                     </div>
                     <div>
                         <label className="block font-semibold text-[#00953A] mb-1">
-                            Product Description <span className="text-sm text-gray-600">({form.ProductDescription.length}/500)</span>
+                            Product Description <span className="text-sm text-gray-600"></span>
                         </label>
                         <textarea
                             name="ProductDescription"
                             value={form.ProductDescription}
                             onChange={handleChange}
                             required
-                            maxLength={500}
+                            // maxLength={500}
                             className="w-full border border-[#00953A] text-black bg-gray-50 rounded px-3 py-2 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#EA7A17]"
-                            placeholder="Enter product description (max 500 characters)"
+                            placeholder="Enter product description"
                         />
                     </div>
                    
@@ -287,14 +287,14 @@ export default function AddProductPage()
                                     />
                                 </div>
                                 <div className="md:col-span-2">
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Description <span className="text-xs text-gray-500">({feature.Description.length}/75)</span></label>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">Description <span className="text-xs text-gray-500"></span></label>
                                     <input
                                         type="text"
                                         name="Description"
                                         placeholder="Description"
                                         value={feature.Description}
                                         onChange={(e) => handleFeatureChange(idx, e)}
-                                        maxLength={75}
+                                        // maxLength={75}
                                      
                                         className="w-full border border-[#00953A] text-black bg-gray-50 rounded px-3 py-2 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#EA7A17]"
                                     />
